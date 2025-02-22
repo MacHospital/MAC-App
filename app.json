@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "mac-hospitals",
+    "slug": "mac-hospitals",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/splashscreen_logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/splashscreen_logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.steph4n.machospitals"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/splashscreen_logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splashscreen_logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8732211a-b51a-4946-a9d3-c05b9f993083"
+      }
+    },
+    "owner": "steph4n"
+  }
+}
