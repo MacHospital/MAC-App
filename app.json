@@ -3,59 +3,47 @@
     "name": "mac-hospitals",
     "slug": "mac-hospitals",
     "version": "1.0.0",
-    "scheme": "mac-hospitals",
     "orientation": "portrait",
+    "icon": "./assets/splashscreen_logo.png",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.apostleapp.machospitals",
-      "infoPlist": {
-        "NSAppTransportSecurity": {
-          "NSAllowsArbitraryLoads": true
-        }
-      }
-    },
-    "expo": {
-      "splash": {
-        "image": "./assets/splashscreen_logo.png",
-        "resizeMode": "contain",
-        "backgroundColor": "#ffffff"
-      }
+      "supportsTablet": true
     },
     "android": {
-      "package": "com.apostleapp.machospitals",
       "adaptiveIcon": {
+        "foregroundImage": "./assets/splashscreen_logo.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": [],
-      "softwareKeyboardLayoutMode": "pan"
+      "package": "com.steph4n.machospitals"
     },
     "web": {
       "bundler": "metro",
-      "output": "static"
+      "output": "static",
+      "favicon": "./assets/splashscreen_logo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#FE6249"
+          "image": "./assets/splashscreen_logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "061848b8-e3b0-4678-b85a-a1e635520796"
+        "projectId": "8732211a-b51a-4946-a9d3-c05b9f993083"
       }
     },
     "owner": "steph4n"
